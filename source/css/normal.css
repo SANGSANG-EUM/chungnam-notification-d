@@ -726,11 +726,52 @@
   .overview04_02_ul li .inner .inner_box .year span {display: inline-block; border-bottom: 2px solid var(--white-color);}
   .overview04_02_ul li .inner .content {padding-top: 13px;}
   .overview04_02_ul li .inner .content_item {font-weight: 400; font-size: 16px; color: var(--white-color); line-height: 1.625;}
-
-  .world01_title::after {content: 'GLOBAL'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
 /* } 사업 개요 */
 
 /* 세계 동향 { */
+  .world_section {}
+  .world_section.world01_bg {background: url('/source/img/world01-bg.png') no-repeat center/cover; padding: 60px 0;}
+  .world_section.world01_gray {padding: 80px 0 60px; background-color: #fafafa;}
+
+  .world01_title::after {content: 'GLOBAL'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
+  .world02_title::after {content: 'GERMANY'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
+
   .world01_01_wrap {padding: 60px 0 70px;}
   .world01_01_wrap .overview01_01_ul {padding-top: 0;}
+  .world01_01_wrap .table_wrap {padding-top: 40px;}
+
+  .table_wrap {}
+  .table_wrap table {width: 100%;}
+  .table_wrap table thead {}
+  .table_wrap table thead tr {}
+  .table_wrap table thead tr th {background-color: #777; border-right: 1px solid #ddd; font-weight: 500; font-size: 18px; color: var(--white-color); padding: 14.21px 0;}
+  .table_wrap table thead tr th:last-child {border-right: none;}
+  .table_wrap table thead tr th.gu {width: 106px;}
+  .table_wrap table tbody {}
+  .table_wrap table tbody tr {border-bottom: 1px solid #ddd;}
+  .table_wrap table tbody tr th {}
+  .table_wrap table tbody tr td {font-weight: 400; font-size: 18px; color: #666; line-height: 1.44; padding: 12px 22px; border-right: 1px solid #ddd;}
+  .table_wrap table tbody tr td:last-child {border-right: none;}
+  .table_wrap.col-5 table tbody tr td {width: calc((100% - 106px) / 4);}
+  .table_wrap table tbody tr td.gu {text-align: center; width: 106px; font-weight: 500; color: #333;}
+
+  .world01_02_wrap {position: relative;}
+  .world01_02_wrap::before {content: ''; width: 97%; height: 1px; background-color: var(--white-color); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+  .world01_02_ul {text-align: center; position: relative;}
+  .world01_02_ul::before {content: ''; width: 15px; height: 15px; border-radius: 50%; border-radius: 50%; border: 3px solid var(--white-color); background-color: transparent; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+  .world01_02_ul::after {content: ''; width: 15px; height: 15px; border-radius: 50%; border-radius: 50%; border: 3px solid var(--white-color); background-color: transparent; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+  .world01_02_ul li {padding: 0 37.5px; position: relative; z-index: 1;}
+  .world01_02_ul li .inner {display: flex; align-items: center; justify-content: center; width: 220px; height: 220px; border-radius: 50%; border: 1px solid #fff;}
+  .world01_02_ul li .inner .round {display: flex; align-items: center; justify-content: center; background-color: var(--main-color); width: 190px; height: 190px; border-radius: 50%;}
+  .world01_02_ul li .inner .round p {font-weight: 500; font-size: 20px; color: var(--white-color); line-height: 1.7;}
+  .world01_02_ul li .inner .round p b {font-size: 26px;}
+
+  .world01_03_wrap {margin: -10px;}
+  .world01_03_wrap_item {vertical-align: top; padding: 10px;}
+  .world01_03_graph_box {border-radius: 30px; background-color: #fff; box-shadow: 0 0 18px rgba(0,0,0,0.08);}
+  .world01_03_source {font-weight: 400; font-size: 16px; color: #999; text-align: right; padding-top: 9px; line-height: 1.375;}
+
+  .world01_04_wrap {padding: 72px 0 118px;}
+
+  .world02_01_wrap {padding: 60px 0;}
 /* } 세계 동향 */
