@@ -6,6 +6,12 @@
   --mobile-height: calc(var(--var,1vh) * 100);
 }
 
+/* Common */
+.cmTable {width: 100%;}
+.cmTable th {font-size: 18px; font-weight: 500; color: #fff; background-color: #777; line-height: 1.45;}
+.cmTable td {font-size: 18px; font-weight: 400; color: #666; background-color: #fff; line-height: 1.45;}
+.cmTable td.bold {font-weight: 500; color: #333;}
+
 /* Header { */
   .header {display: flex; align-items: center; position: absolute; top: 0; left: 0; width: 100%; padding: 30px 44px; z-index: 10;}
   .header .logo {}
@@ -735,6 +741,8 @@
 
   .world01_title::after {content: 'GLOBAL'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
   .world02_title::after {content: 'GERMANY'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
+  .world01_title.uk::after {content: 'UK';}
+/* } 사업 개요 */
 
   .world01_01_wrap {padding: 60px 0 70px;}
   .world01_01_wrap .overview01_01_ul {padding-top: 0;}
@@ -774,4 +782,22 @@
   .world01_04_wrap {padding: 72px 0 118px;}
 
   .world02_01_wrap {padding: 60px 0;}
+
+  .flag_section {padding: 65px 0 105px; background: url('/source/img/flag-uk-bg.jpg') no-repeat center/cover;}
+  .flag_section.uk {}
+  .flag_section .world01_01_wrap {padding: 0;}
+
+  .world_bs-flag {margin-bottom: 20px; text-align: center;}
+  .world_bs-tit {font-size: 38px; font-weight: 700; color: #fff; text-align: center;}
+  .world_bs-detail {margin-top: 50px;}
+  .world_bs-txtBox {padding: 30px 35px; border: 1px solid rgba(255,255,255,0.5); border-radius: 20px;}
+  .world_bs-txtBox.white {border: 1px solid #eee; background-color: #fff;}
+  .world_bs-txtBox:not(:first-child) {margin-top: 10px;}
+  .world_bs-t0 {font-size: 16px; font-weight: 700; color: #bbb;}
+  .world_bs-t1 {padding-left: 10px; text-indent: -10px; font-size: 20px; font-weight: 400; color: #333; line-height: 1.55;}
+  .world_bs-t1:before {content: ""; display: inline-block; width: 4px; height: 4px; margin: 14px 5px 0 0; border-radius: 50%; background-color: var(--main-color); vertical-align: top;}
+  .world_bs-t2 {padding-left: 14px; text-indent: -14px; font-size: 18px; font-weight: 400; color: #fff; line-height: 1.7;}
+  .world_bs-t2:before {content: "-"; display: inline; margin-right: 4px; vertical-align: top;}
+  
+  
 /* } 세계 동향 */
