@@ -740,6 +740,8 @@
   .world_section.world01_gray {padding: 80px 0 60px; background-color: #fafafa;}
   .world_section.world02_02 {padding: 63px 0 65px; background-color: #fafafa;}
   .world_section.world02_03 {padding: 60px 0;}
+  .world_section.world02_04 {padding: 100px 0 60px;}
+  .world_section.world02_05 {padding: 60px 0 100px; background-color: #fafafa;}
 
   .world01_title::after {content: 'GLOBAL'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
   .world02_title::after {content: 'GERMANY'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
@@ -795,6 +797,23 @@
   .world02_02_ul li .inner .title .num {color: var(--main-color);}
   .world02_02_ul li .inner .content {font-weight: 400; font-size: 18px; color: #666; line-height: 1.444; padding-top: 10px;}
 
+  .world02_04_wrap {margin: 0 -10px;}
+  .world02_04_wrap_item {padding: 0 10px; vertical-align: top;}
+  .world02_04_wrap_item > .inner {border: 1px solid #eee; border-radius: 20px; background-color: #fff; box-shadow: 0 0 18px rgba(0,0,0,0.08);}
+  .world02_04_wrap_list {margin: -5px;}
+  .world02_04_wrap_list li {padding: 5px;}
+  .world02_04_wrap_list li .inner {border: 1px solid #eee; border-radius: 20px; box-shadow: 0 0 18px rgba(0,0,0,0.08); padding: 22px 23px 24px 25px;}
+  .world02_04_wrap_list li .level_title {width: 100%; display: flex; height: 50px; align-items: center; border-radius: 25px; font-weight: 600; font-size: 20px; color: var(--white-color); background-color: #4478b2; padding: 0 27px;}
+  .world02_04_wrap_list li:nth-child(1) .level_title {background-color: #4478b2;}
+  .world02_04_wrap_list li:nth-child(2) .level_title {background-color: #3eb3b0;}
+  .world02_04_wrap_list li:nth-child(3) .level_title {background-color: #ea9c41;}
+  .world02_04_wrap_list li:nth-child(4) .level_title {background-color: #a85d3d;}
+  .world02_04_wrap_list li .content {padding-left: 25px; padding-top: 14px;}
+  .world02_04_wrap_list li .content_item {padding-bottom: 6px;}
+  .world02_04_wrap_list li .content_item:last-child {padding-bottom: 0;}
+  .world02_04_wrap_list li .content_item span {font-weight: 500; font-size: 18px;}
+  .world02_04_wrap_list li .content_item span:last-child {margin-left: 9px;}
+
   .flag_section {padding: 65px 0 105px; background: url('/source/img/flag-uk-bg.jpg') no-repeat center/cover;}
   .flag_section.gr {padding: 65px 0 105px; background: url('/source/img/flag-gr-bg.jpg') no-repeat center/cover;}
   .flag_section.uk {}
@@ -827,4 +846,24 @@
   .world_images.child2 .box {width: calc((100% / 2) - (20px / 2));}
   .world_images .img-wr {text-align: center;}
   .world_images .subj {margin-top: 15px; font-size: 18px; font-weight: 400; color: #666; text-align: center;}
+
+  .world02_05_wrap {margin: -20px 0;}
+  .world02_05_item {padding: 20px 0;}
+  .world02_05_item_title {font-weight: 700; font-size: 20px; padding-bottom: 15px;}
+  .world02_05_item:nth-child(1) .world02_05_item_title {color: #4478b2;}
+  .world02_05_item:nth-child(2) .world02_05_item_title {color: #3eb3b0;}
+  .world02_05_item:nth-child(3) .world02_05_item_title {color: #ea9c41;}
+  .world02_05_item:nth-child(4) .world02_05_item_title {color: #a85d3d;}
+
+  .table_wrap.type02 {}
+  .table_wrap.type02 table {border: 1px solid #ddd;}
+  .table_wrap.type02 table tr {border-bottom: 1px solid #ddd;}
+  .table_wrap.type02 table tr:last-child {border-bottom: none;}
+  .table_wrap.type02 table tr th {width: 270px; font-weight: 500; font-size: 18px; color: var(--white-color); line-height: 1.555;}
+  .table_wrap.type02 table tr td {font-weight: 400; font-size: 18px; line-height: 1.555; color: #666; padding: 19px 33px 22px;}
+  .table_wrap.type02 table tr td span.yellow {font-weight: 500; font-size: 18px; color: #ea9c41; display: inline-block; margin-top: 6px;}
+  .table_wrap.type02.blue table tr th {background-color: #4478b2;}
+  .table_wrap.type02.sora table tr th {background-color: #3eb3b0;}
+  .table_wrap.type02.yellow table tr th {background-color: #ea9c41;}
+  .table_wrap.type02.brown table tr th {background-color: #a85d3d;}
 /* } 세계 동향 */
