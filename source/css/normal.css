@@ -738,6 +738,8 @@
   .world_section {}
   .world_section.world01_bg {background: url('/source/img/world01-bg.png') no-repeat center/cover; padding: 60px 0;}
   .world_section.world01_gray {padding: 80px 0 60px; background-color: #fafafa;}
+  .world_section.world02_02 {padding: 63px 0 65px; background-color: #fafafa;}
+  .world_section.world02_03 {padding: 60px 0;}
 
   .world01_title::after {content: 'GLOBAL'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
   .world02_title::after {content: 'GERMANY'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
@@ -760,6 +762,8 @@
   .table_wrap table tbody tr th {}
   .table_wrap table tbody tr td {font-weight: 400; font-size: 18px; color: #666; line-height: 1.44; padding: 12px 22px; border-right: 1px solid #ddd;}
   .table_wrap table tbody tr td:last-child {border-right: none;}
+  .table_wrap table tbody tr td.center {text-align: center;}
+  .table_wrap table tbody tr td.bold {font-weight: 500; color: #333;}
   .table_wrap.col-5 table tbody tr td {width: calc((100% - 106px) / 4);}
   .table_wrap table tbody tr td.gu {text-align: center; width: 106px; font-weight: 500; color: #333;}
 
@@ -783,7 +787,15 @@
 
   .world02_01_wrap {padding: 60px 0;}
 
+  .world02_02_ul {margin: -10px;}
+  .world02_02_ul li {padding: 10px;}
+  .world02_02_ul li .inner {display: flex; flex-direction: column; height: 192px; border: 1px solid #eee; border-radius: 20px; box-shadow: 0 0 18px rgba(0,0,0,0.08); padding: 33px;}
+  .world02_02_ul li .inner .title {font-weight: 700; font-size: 20px; color: #333;}
+  .world02_02_ul li .inner .title .num {color: var(--main-color);}
+  .world02_02_ul li .inner .content {font-weight: 400; font-size: 18px; color: #666; line-height: 1.444; padding-top: 10px;}
+
   .flag_section {padding: 65px 0 105px; background: url('/source/img/flag-uk-bg.jpg') no-repeat center/cover;}
+  .flag_section.gr {padding: 65px 0 105px; background: url('/source/img/flag-gr-bg.jpg') no-repeat center/cover;}
   .flag_section.uk {}
   .flag_section .world01_01_wrap {padding: 0;}
 
@@ -795,6 +807,7 @@
   .world_bs-txtBox:not(:first-child) {margin-top: 10px;}
   .world_bs-t0 {font-size: 16px; font-weight: 700; color: #bbb;}
   .world_bs-t1 {padding-left: 10px; text-indent: -10px; font-size: 20px; font-weight: 400; color: #333; line-height: 1.55;}
+  .world_bs-t1 span {font-weight: 400; font-size: 18px; color: #666;}
   .world_bs-t1:before {content: ""; display: inline-block; width: 4px; height: 4px; margin: 14px 5px 0 0; border-radius: 50%; background-color: var(--main-color); vertical-align: top;}
   .world_bs-t2 {padding-left: 14px; text-indent: -14px; font-size: 18px; font-weight: 400; color: #fff; line-height: 1.7;}
   .world_bs-t2:before {content: "-"; display: inline; margin-right: 4px; vertical-align: top;}
