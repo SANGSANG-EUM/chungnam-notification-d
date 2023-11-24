@@ -744,6 +744,7 @@
   .world01_title::after {content: 'GLOBAL'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
   .world02_title::after {content: 'GERMANY'; font-weight: 900; font-size: 100px; color: #f7f7f7; position: absolute; bottom: -30px; right: 0;}
   .world01_title.uk::after {content: 'UK';}
+  .world01_title.netherlands::after {content: 'NETHERLANDS';}
 /* } 사업 개요 */
 
   .world01_01_wrap {padding: 60px 0 70px;}
@@ -797,20 +798,33 @@
   .flag_section {padding: 65px 0 105px; background: url('/source/img/flag-uk-bg.jpg') no-repeat center/cover;}
   .flag_section.gr {padding: 65px 0 105px; background: url('/source/img/flag-gr-bg.jpg') no-repeat center/cover;}
   .flag_section.uk {}
+  .flag_section {padding: 65px 0 105px;}
+  .flag_section.uk {background: url('/source/img/flag-uk-bg.jpg') no-repeat center/cover;}
+  .flag_section.netherlands {background: url('/source/img/flag-netherlands-bg.jpg') no-repeat center/cover;}
   .flag_section .world01_01_wrap {padding: 0;}
 
   .world_bs-flag {margin-bottom: 20px; text-align: center;}
   .world_bs-tit {font-size: 38px; font-weight: 700; color: #fff; text-align: center;}
   .world_bs-detail {margin-top: 50px;}
-  .world_bs-txtBox {padding: 30px 35px; border: 1px solid rgba(255,255,255,0.5); border-radius: 20px;}
+  .world_bs-txtBox {overflow: hidden; border: 1px solid rgba(255,255,255,0.5); border-radius: 20px;}
   .world_bs-txtBox.white {border: 1px solid #eee; background-color: #fff;}
+  .world_bs-txtInner {padding: 30px 35px;}
   .world_bs-txtBox:not(:first-child) {margin-top: 10px;}
   .world_bs-t0 {font-size: 16px; font-weight: 700; color: #bbb;}
   .world_bs-t1 {padding-left: 10px; text-indent: -10px; font-size: 20px; font-weight: 400; color: #333; line-height: 1.55;}
   .world_bs-t1 span {font-weight: 400; font-size: 18px; color: #666;}
+  .world_bs-t1.white {color: #fff;}
   .world_bs-t1:before {content: ""; display: inline-block; width: 4px; height: 4px; margin: 14px 5px 0 0; border-radius: 50%; background-color: var(--main-color); vertical-align: top;}
-  .world_bs-t2 {padding-left: 14px; text-indent: -14px; font-size: 18px; font-weight: 400; color: #fff; line-height: 1.7;}
+  .world_bs-t2 {padding-left: 14px; text-indent: -14px; font-size: 18px; font-weight: 400; color: #666; line-height: 1.7;}
+  .world_bs-t2.white {color: #fff;}
   .world_bs-t2:before {content: "-"; display: inline; margin-right: 4px; vertical-align: top;}
+  .world_bs-t-big {font-size: 20px; font-weight: 700; color: #02be86;}
+  .world_bs-t-big.white {color: #fff;}
+  .world_bs-t-cBox {padding: 13px 35px; background-color: #02be86;}
   
-  
+  .world_images {display: flex; gap: 20px;}
+  .world_images .box {padding: 15px; border: 1px solid #eee; border-radius: 20px; background-color: #fff; box-shadow: 0 0 18px rgba(0,0,0,0.08);}
+  .world_images.child2 .box {width: calc((100% / 2) - (20px / 2));}
+  .world_images .img-wr {text-align: center;}
+  .world_images .subj {margin-top: 15px; font-size: 18px; font-weight: 400; color: #666; text-align: center;}
 /* } 세계 동향 */
