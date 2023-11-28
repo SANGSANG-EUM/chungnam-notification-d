@@ -537,8 +537,8 @@
 
   .overview01_01_wrap {padding-bottom: 97px;}
   .overview01_01_ul {padding-top: 60px; margin: -10px;}
-  .overview01_01_ul li {padding: 10px;}
-  .overview01_01_ul li .inner {border-radius: 30px; box-shadow: 0 0 18px rgba(0,0,0,0.08); text-align: center; border: 1px solid #eee; padding: 23px 20px 39px;}
+  .overview01_01_ul li {padding: 10px; vertical-align: top;}
+  .overview01_01_ul li .inner {border-radius: 30px; box-shadow: 0 0 18px rgba(0,0,0,0.08); text-align: center; border: 1px solid #eee; padding: 23px 20px 39px; height: 100%;}
   .overview01_01_ul li .inner .num {display: flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid var(--main-color); margin: 0 auto; font-weight: 600; font-size: 18px; color: var(--main-color); margin-bottom: 13px;}
   .overview01_01_ul li .inner .title {font-weight: 700; font-size: 26px; color: #333; padding-bottom: 30px; position: relative;}
   .overview01_01_ul li .inner .title::before {content: ''; width: 20px; height: 2px; background-color: #ddd; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
@@ -552,7 +552,7 @@
   .overview01_02_wrap:last-child {padding-bottom: 0;}
   .bar_title {padding-left: 17px; font-weight: 400; font-size: 22px; color: #fff; line-height: 1.27; position: relative; margin-bottom: 18px;}
   .bar_title.black {color: var(--black-color);}
-  .bar_title::before {content: ''; width: 3px; height: 20px; background-color: var(--main-color); position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+  .bar_title::before {content: ''; width: 3px; height: 20px; background-color: var(--main-color); position: absolute; top: 4px; left: 0;}
 
   .overview01_02_graph_box {border-radius: 30px; background-color: #f9f9f9; padding: 52px 146px; position: relative;}
   .overview01_02_graph_box::before {content: '자료출처 : 임재규 (2021)'; font-weight: 400; font-size: 16px; color: #999; position: absolute; bottom: 21px; right: 24px;}
@@ -626,10 +626,10 @@
   .overview02_01_col_ul03 li .inner {display: flex; flex-direction: column; height: 200px; width: 100%; border-radius: 30px; box-shadow: 0 0 18px rgba(0,0,0,0.08); border: 2px solid transparent; background-color: #fff; text-align: left;}
   .overview02_01_col_ul03 li .inner .text_list {height: 100%; padding: 24px 30px;}
   .overview02_01_col_ul03 li .inner .text_list.col-2 {}
-  .overview02_01_col_ul03 li .inner .text_list.col-2 > * {height: 50%; padding-top: 24px;}
+  .overview02_01_col_ul03 li .inner .text_list.col-2 > * {height: 50%;}
   .overview02_01_col_ul03 li .inner .text_list.col-4 {}
-  .overview02_01_col_ul03 li .inner .text_list.col-4 > * {height: 25%; padding-top: 4px;}
-  .overview02_01_col_ul03 li .inner .text_list_item {font-weight: 400; font-size: 16px; color: var(--black-color); line-height: 1.875; border-bottom: 1px solid #ddd;}
+  .overview02_01_col_ul03 li .inner .text_list.col-4 > * {height: 25%;}
+  .overview02_01_col_ul03 li .inner .text_list_item {font-weight: 400; font-size: 16px; color: var(--black-color); line-height: 1.875; border-bottom: 1px solid #ddd; display: flex; align-items: center;}
   .overview02_01_col_ul03 li .inner .text_list_item:last-child {border-bottom: none;}
 
   li.color_line01 .inner {border-color: #7da5cc; position: relative;}
@@ -696,7 +696,7 @@
   .overview04_01_ul > li::before {content: ''; width: 40px; height: 40px; border-radius: 50%; background-color: #000; position: absolute; top: 25px; right: -23px; z-index: 1;}
   .overview04_01_ul > li:nth-child(1)::before {background: linear-gradient(to left,#85ca63,#40b3c1);}
   .overview04_01_ul > li:nth-child(2)::before {background: linear-gradient(to left,#40b3c1,#2f6daa);}
-  .overview04_01_ul > li::after {content: ''; background: url('/source/img/icon-arr-right02.png') no-repeat center #fff; width: 36px; height: 36px; border-radius: 50%; position: absolute; top: 26.5px; right: -21.5px; z-index: 2;}
+  .overview04_01_ul > li::after {content: ''; background: url('/source/img/icon-arr-right02.png') no-repeat center #fff; width: 36px; height: 36px; border-radius: 50%; position: absolute; top: 27px; right: -21px; z-index: 2;}
   .overview04_01_ul > li:last-child::before {display: none;}
   .overview04_01_ul > li:last-child::after {display: none;}
   .overview04_01_ul > li > .inner {border-radius: 30px; padding: 15px; height: 655px;}
@@ -754,6 +754,7 @@
   .world01_01_wrap .table_wrap {padding-top: 40px;}
 
   .table_wrap {}
+  .table_wrap .table_caption {font-weight: 500; font-size: 12px; text-align: center; padding-bottom: 10px; display: none;}
   .table_wrap table {width: 100%;}
   .table_wrap table thead {}
   .table_wrap table thead tr {}
@@ -784,7 +785,7 @@
   .world01_03_wrap {margin: -10px;}
   .world01_03_wrap_item {vertical-align: top; padding: 10px;}
   .world01_03_graph_box {border-radius: 30px; background-color: #fff; box-shadow: 0 0 18px rgba(0,0,0,0.08);}
-  .world01_03_source {font-weight: 400; font-size: 16px; color: #999; text-align: right; padding-top: 9px; line-height: 1.375;}
+  .world01_03_source {font-weight: 400; font-size: 16px; color: #999; text-align: right; line-height: 1.375; padding-top: 9px;}
 
   .world01_04_wrap {padding: 72px 0 118px;}
 
@@ -799,7 +800,7 @@
 
   .world02_04_wrap {margin: 0 -10px;}
   .world02_04_wrap_item {padding: 0 10px; vertical-align: top;}
-  .world02_04_wrap_item > .inner {border: 1px solid #eee; border-radius: 20px; background-color: #fff; box-shadow: 0 0 18px rgba(0,0,0,0.08);}
+  .world02_04_wrap_item > .inner {border: 1px solid #eee; border-radius: 20px; background-color: #fff; box-shadow: 0 0 18px rgba(0,0,0,0.08); overflow: hidden;}
   .world02_04_wrap_list {margin: -5px;}
   .world02_04_wrap_list li {padding: 5px;}
   .world02_04_wrap_list li .inner {border: 1px solid #eee; border-radius: 20px; box-shadow: 0 0 18px rgba(0,0,0,0.08); padding: 22px 23px 24px 25px;}
@@ -813,6 +814,8 @@
   .world02_04_wrap_list li .content_item:last-child {padding-bottom: 0;}
   .world02_04_wrap_list li .content_item span {font-weight: 500; font-size: 18px;}
   .world02_04_wrap_list li .content_item span:last-child {margin-left: 9px;}
+  .world02_04_source {font-weight: 400; font-size: 16px; color: #999; padding-top: 10px; text-align: right;}
+  .world_images_source {font-weight: 400; font-size: 16px; color: #999; padding-top: 10px; text-align: right;}
 
   .flag_section {padding: 65px 0 105px; background: url('/source/img/flag-uk-bg.jpg') no-repeat center/cover;}
   .flag_section.gr {padding: 65px 0 105px; background: url('/source/img/flag-gr-bg.jpg') no-repeat center/cover;}
